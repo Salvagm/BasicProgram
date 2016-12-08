@@ -10,7 +10,23 @@ namespace SpreadEX.DrawLib
     {
         Coordinates ShapePosition;
 
-        public abstract void Print();
 
+
+        public BaseShape(Coordinates position)
+        {
+            ShapePosition = position;
+        }
+
+        public BaseShape(int xPosition, int yPosition)
+        {
+            ShapePosition = new Coordinates(xPosition, yPosition);
+        }
+
+        public BaseShape(BaseShape other)
+        {
+            ShapePosition = new Coordinates(other.ShapePosition);
+        }
+
+        public abstract void Print();
     }
 }

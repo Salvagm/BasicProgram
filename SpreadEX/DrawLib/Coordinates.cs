@@ -11,17 +11,17 @@ namespace SpreadEX.DrawLib
     /// </summary>
     class Coordinates
     {
-        public float X
+        public int X
         {
             get; set;
         }
 
-        public float Y
+        public int Y
         {
             get; set;
         }
 
-        public Coordinates(float x, float y)
+        public Coordinates(int x, int y)
         {
             X = x;
             Y = y;
