@@ -19,13 +19,13 @@ namespace SpreadEX.DrawLib
         public BaseShape()
         {
             ShapePosition = new Coordinates();
-            ShapeName = "dot";
+            ShapeName = GetType().Name;
         }
 
         public BaseShape(int xPosition, int yPosition)
         {
             ShapePosition = new Coordinates(xPosition, yPosition);
-            ShapeName = "dot";
+            ShapeName = GetType().Name;
         }
 
         public BaseShape(BaseShape other)

@@ -1,18 +1,21 @@
 ﻿using System;
-
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace SpreadEX.DrawLib
 {
-    class Square : BaseShape
+    class Circle : BaseShape
     {
         public int Size { get; set; }
 
-        public Square() : base()
+        public Circle() : base()
         {
             Size = 0;
         }
 
-        public Square(int xPosition, int yPosition, int size) : base(xPosition, yPosition)
+        public Circle(int xPosition, int yPosition, int size) : base(xPosition, yPosition)
         {
             Size = size;
         }
@@ -26,5 +29,6 @@ namespace SpreadEX.DrawLib
         {
             return string.Format("{0} Size={1}",base.ToString(),Size);
         }
+
     }
 }
