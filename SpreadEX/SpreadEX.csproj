@@ -49,6 +49,7 @@
     <Compile Include="DrawLib\Ellipse.cs" />
     <Compile Include="DrawLib\Rectangle.cs" />
     <Compile Include="DrawLib\Square.cs" />
+    <Compile Include="DrawLib\Textbox.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
