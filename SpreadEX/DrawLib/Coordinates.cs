@@ -27,10 +27,21 @@ namespace SpreadEX.DrawLib
             Y = y;
         }
 
+        public Coordinates()
+        {
+            X = 0;
+            Y = 0;
+        }
+
         public Coordinates(Coordinates other)
         {
             X = other.X;
             Y = other.Y;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("({0},{1})", X, Y);
         }
     }
 }

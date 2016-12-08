@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
+using SpreadEX.DrawLib;
 
 namespace SpreadEX
 {
@@ -10,6 +9,12 @@ namespace SpreadEX
     {
         static void Main(string[] args)
         {
+            BaseShape sq = new Square(2, 2, 10);
+
+            sq.Print();
+
+            Console.ReadKey();
+
         }
     }
 }
