@@ -19,8 +19,14 @@ namespace SpreadEX.DrawLib
 
         public Ellipse(int xPosition, int yPosition, int diameterH, int diameterV) : base(xPosition,yPosition)
         {
-            DiameterH = diameterH;
-            DiameterV = diameterV;
+            if (diameterH >= 0 && diameterV >= 0)
+            {
+                DiameterH = diameterH;
+                DiameterV = diameterV;
+            }
+            else
+                throw new Exception("Diameters must be positive");
+
         }
 
 

@@ -12,9 +12,12 @@ namespace SpreadEX.DrawLib
             Width = 0;
         }
 
-        public Square(int xPosition, int yPosition, int size) : base(xPosition, yPosition)
+        public Square(int xPosition, int yPosition, int width) : base(xPosition, yPosition)
         {
-            Width = size;
+            if (width >= 0)
+                Width = width;
+            else
+                throw new Exception("Width must be positive");
         }
 
         public override void Print()
