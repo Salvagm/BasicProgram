@@ -8,9 +8,7 @@ namespace SpreadEX.DrawLib
 {
     abstract class BaseShape
     {
-        Coordinates ShapePosition;
-
-
+        public Coordinates ShapePosition { get; set; }
 
         public BaseShape(Coordinates position)
         {
