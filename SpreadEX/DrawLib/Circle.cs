@@ -15,9 +15,12 @@ namespace SpreadEX.DrawLib
             Diameter = 0;
         }
 
-        public Circle(int xPosition, int yPosition, int size) : base(xPosition, yPosition)
+        public Circle(int xPosition, int yPosition, int diameter) : base(xPosition, yPosition)
         {
-            Diameter = size;
+            if (diameter >= 0)
+                Diameter = diameter;
+            else
+                throw new Exception("Diameters must be positive");
         }
 
         public override void Print()

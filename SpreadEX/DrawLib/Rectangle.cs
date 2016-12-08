@@ -19,8 +19,15 @@ namespace SpreadEX.DrawLib
 
         public Rectangle(int xPosition, int yPosition, int width, int height) : base(xPosition,yPosition)
         {
-            Width = width;
-            Height = height;
+            if(width >= 0 && height >= 0)
+            {
+                Width = width;
+                Height = height;
+            }
+            else
+            {
+                throw new Exception("Width and Height must be positive ");
+            }
         }
 
         public override void Print()
