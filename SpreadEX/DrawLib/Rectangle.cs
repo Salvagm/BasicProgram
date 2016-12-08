@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SpreadEX.DrawLib
 {
-    class Rectangle : BaseShape
+    class Rectangle : Widget
     {
         public int Width { get; set; }
         public int Height { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SpreadEX.DrawLib
 {
-    class Ellipse : BaseShape
+    class Ellipse : Widget
     {
         public int DiameterH { get; set; }
         public int DiameterV { get; set; }

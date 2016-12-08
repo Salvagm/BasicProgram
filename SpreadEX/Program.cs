@@ -9,7 +9,7 @@ namespace SpreadEX
     {
         static void Main(string[] args)
         {
-            IList<BaseShape> shapes = new List<BaseShape>();
+            IList<Widget> shapes = new List<Widget>();
 
             // Exercise
             shapes.Add(new Rectangle(xPosition: 10, yPosition: 10, width: 30, height: 40));

@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace SpreadEX.DrawLib
 {
-    class Circle : BaseShape
+    class Circle : Widget
     {
-        public int Size { get; set; }
+        public int Diameter { get; set; }
 
         public Circle() : base()
         {
-            Size = 0;
+            Diameter = 0;
         }
 
         public Circle(int xPosition, int yPosition, int size) : base(xPosition, yPosition)
         {
-            Size = size;
+            Diameter = size;
         }
 
         public override void Print()
@@ -28,7 +28,7 @@ namespace SpreadEX.DrawLib
 
         public override string ToString()
         {
-            return string.Format("{0} Size={1}",base.ToString(),Size);
+            return string.Format("{0} Size={1}",base.ToString(),Diameter);
         }
 
     }

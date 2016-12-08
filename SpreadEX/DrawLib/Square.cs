@@ -3,18 +3,18 @@
 
 namespace SpreadEX.DrawLib
 {
-    class Square : BaseShape
+    class Square : Widget
     {
-        public int Size { get; set; }
+        public int Width { get; set; }
 
         public Square() : base()
         {
-            Size = 0;
+            Width = 0;
         }
 
         public Square(int xPosition, int yPosition, int size) : base(xPosition, yPosition)
         {
-            Size = size;
+            Width = size;
         }
 
         public override void Print()
@@ -25,7 +25,7 @@ namespace SpreadEX.DrawLib
 
         public override string ToString()
         {
-            return string.Format("{0} Size={1}",base.ToString(),Size);
+            return string.Format("{0} Size={1}",base.ToString(),Width);
         }
     }
 }
