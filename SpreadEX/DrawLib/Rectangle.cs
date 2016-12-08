@@ -13,14 +13,12 @@ namespace SpreadEX.DrawLib
 
         public Rectangle() : base()
         {
-            ShapeName = GetType().Name;
             Width = 0;
             Height = 0;
         }
 
         public Rectangle(int xPosition, int yPosition, int width, int height) : base(xPosition,yPosition)
         {
-            ShapeName = GetType().Name;
             Width = width;
             Height = height;
         }
@@ -34,7 +32,7 @@ namespace SpreadEX.DrawLib
 
         public override string ToString()
         {
-            return string.Format("{0}, width={1} height={1}", base.ToString(), Width,Height);
+            return string.Format("{0} width={1} height={1}", base.ToString(), Width,Height);
         }
 
     }
