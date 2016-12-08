@@ -46,6 +46,7 @@
     <Compile Include="DrawLib\BaseShape.cs" />
     <Compile Include="DrawLib\Circle.cs" />
     <Compile Include="DrawLib\Coordinates.cs" />
+    <Compile Include="DrawLib\Ellipse.cs" />
     <Compile Include="DrawLib\Rectangle.cs" />
     <Compile Include="DrawLib\Square.cs" />
     <Compile Include="Program.cs" />
