@@ -10,6 +10,7 @@ namespace SpreadEX.DrawLib
         public Square() : base()
         {
             ShapeName = GetType().Name;
+            Single = 0;
         }
 
         public Square(int xPosition, int yPosition, int size) : base(xPosition, yPosition)
