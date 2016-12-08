@@ -27,13 +27,14 @@ namespace SpreadEX.DrawLib
 
         public override void Print()
         {
-            Console.WriteLine(ToString());
+            base.Print();
+            //Specific draw fuction
         }
 
 
         public override string ToString()
         {
-            return base.ToString();
+            return string.Format("{0}, width={1} height={1}", base.ToString(), Width,Height);
         }
 
     }

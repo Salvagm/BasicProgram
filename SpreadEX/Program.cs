@@ -11,7 +11,7 @@ namespace SpreadEX
         {
             IList<BaseShape> shapes = new List<BaseShape>();
             shapes.Add(new Square(2, 2, 10));
-
+            shapes.Add(new Rectangle(3, 3, 10, 20));
 
             foreach (var shape in shapes)
             {
