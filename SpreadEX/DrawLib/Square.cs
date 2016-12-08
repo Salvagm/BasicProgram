@@ -20,6 +20,7 @@ namespace SpreadEX.DrawLib
         public override void Print()
         {
             base.Print();
+            //Specific draw fuction
         }
 
         public override string ToString()

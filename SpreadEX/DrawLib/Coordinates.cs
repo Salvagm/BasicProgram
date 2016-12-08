@@ -6,9 +6,6 @@ using System.Threading.Tasks;
 
 namespace SpreadEX.DrawLib
 {
-    /// <summary>
-    /// Basic coordinates class
-    /// </summary>
     class Coordinates
     {
         public int X
