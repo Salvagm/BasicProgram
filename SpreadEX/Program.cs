@@ -9,9 +9,14 @@ namespace SpreadEX
     {
         static void Main(string[] args)
         {
-            BaseShape sq = new Square(2, 2, 10);
+            IList<BaseShape> shapes = new List<BaseShape>();
+            shapes.Add(new Square(2, 2, 10));
+            shapes.Add(new Rectangle(3, 3, 10, 20));
 
-            sq.Print();
+            foreach (var shape in shapes)
+            {
+                shape.Print();
+            }
 
             Console.ReadKey();
 

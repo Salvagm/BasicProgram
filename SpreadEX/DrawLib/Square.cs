@@ -10,7 +10,7 @@ namespace SpreadEX.DrawLib
         public Square() : base()
         {
             ShapeName = GetType().Name;
-            Single = 0;
+            Size = 0;
         }
 
         public Square(int xPosition, int yPosition, int size) : base(xPosition, yPosition)
@@ -21,7 +21,8 @@ namespace SpreadEX.DrawLib
 
         public override void Print()
         {
-            Console.WriteLine(ToString());
+            base.Print();
+            //Specific draw function
         }
 
         public override string ToString()

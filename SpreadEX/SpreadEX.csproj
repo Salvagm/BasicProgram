@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="DrawLib\BaseShape.cs" />
     <Compile Include="DrawLib\Coordinates.cs" />
+    <Compile Include="DrawLib\Rectangle.cs" />
     <Compile Include="DrawLib\Square.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
