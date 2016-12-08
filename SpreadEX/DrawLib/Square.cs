@@ -3,28 +3,32 @@
 
 namespace SpreadEX.DrawLib
 {
-    class Square : BaseShape
+    class Square : Widget
     {
-        public int Size { get; set; }
+        public int Width { get; set; }
 
         public Square() : base()
         {
-            Size = 0;
+            Width = 0;
         }
 
-        public Square(int xPosition, int yPosition, int size) : base(xPosition, yPosition)
+        public Square(int xPosition, int yPosition, int width) : base(xPosition, yPosition)
         {
-            Size = size;
+            if (width >= 0)
+                Width = width;
+            else
+                throw new Exception("Width must be positive");
         }
 
         public override void Print()
         {
             base.Print();
+            //Specific draw fuction
         }
 
         public override string ToString()
         {
-            return string.Format("{0} Size={1}",base.ToString(),Size);
+            return string.Format("{0} Size={1}",base.ToString(),Width);
         }
     }
 }

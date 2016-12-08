@@ -6,28 +6,32 @@ using System.Threading.Tasks;
 
 namespace SpreadEX.DrawLib
 {
-    class Circle : BaseShape
+    class Circle : Widget
     {
-        public int Size { get; set; }
+        public int Diameter { get; set; }
 
         public Circle() : base()
         {
-            Size = 0;
+            Diameter = 0;
         }
 
-        public Circle(int xPosition, int yPosition, int size) : base(xPosition, yPosition)
+        public Circle(int xPosition, int yPosition, int diameter) : base(xPosition, yPosition)
         {
-            Size = size;
+            if (diameter >= 0)
+                Diameter = diameter;
+            else
+                throw new Exception("Diameters must be positive");
         }
 
         public override void Print()
         {
             base.Print();
+            //Specific draw fuction
         }
 
         public override string ToString()
         {
-            return string.Format("{0} Size={1}",base.ToString(),Size);
+            return string.Format("{0} Size={1}",base.ToString(),Diameter);
         }
 
     }

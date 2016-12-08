@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SpreadEX.DrawLib
 {
-    class Ellipse : BaseShape
+    class Ellipse : Widget
     {
         public int DiameterH { get; set; }
         public int DiameterV { get; set; }
@@ -19,14 +19,21 @@ namespace SpreadEX.DrawLib
 
         public Ellipse(int xPosition, int yPosition, int diameterH, int diameterV) : base(xPosition,yPosition)
         {
-            DiameterH = diameterH;
-            DiameterV = diameterV;
+            if (diameterH >= 0 && diameterV >= 0)
+            {
+                DiameterH = diameterH;
+                DiameterV = diameterV;
+            }
+            else
+                throw new Exception("Diameters must be positive");
+
         }
 
 
         public override void Print()
         {
             base.Print();
+            //Specific draw fuction
         }
         public override string ToString()
         {

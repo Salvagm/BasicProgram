@@ -6,37 +6,37 @@ using System.Threading.Tasks;
 
 namespace SpreadEX.DrawLib
 {
-    class BaseShape
+    class Widget
     {
         public Coordinates ShapePosition { get; set; }
-        public string ShapeName { get; set; }
+        public string WidgetName { get; set; }
 
-        public BaseShape(Coordinates position, string name)
+        public Widget(Coordinates position, string name)
         {
             ShapePosition = position;
-            ShapeName = name;
+            WidgetName = name;
         }
-        public BaseShape()
+        public Widget()
         {
             ShapePosition = new Coordinates();
-            ShapeName = GetType().Name;
+            WidgetName = GetType().Name;
         }
 
-        public BaseShape(int xPosition, int yPosition)
+        public Widget(int xPosition, int yPosition)
         {
             ShapePosition = new Coordinates(xPosition, yPosition);
-            ShapeName = GetType().Name;
+            WidgetName = GetType().Name;
         }
 
-        public BaseShape(BaseShape other)
+        public Widget(Widget other)
         {
             ShapePosition = new Coordinates(other.ShapePosition);
-            ShapeName = other.ShapeName;
+            WidgetName = other.WidgetName;
         }
 
         public override string ToString()
         {
-            return string.Format("{0} {1}",ShapeName, ShapePosition.ToString());
+            return string.Format("{0} {1}",WidgetName, ShapePosition.ToString());
         }
 
         public virtual void Print()

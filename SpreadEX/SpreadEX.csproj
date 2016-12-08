@@ -43,17 +43,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DrawLib\BaseShape.cs" />
+    <Compile Include="DrawLib\Widget.cs" />
     <Compile Include="DrawLib\Circle.cs" />
     <Compile Include="DrawLib\Coordinates.cs" />
     <Compile Include="DrawLib\Ellipse.cs" />
     <Compile Include="DrawLib\Rectangle.cs" />
     <Compile Include="DrawLib\Square.cs" />
+    <Compile Include="DrawLib\Textbox.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
