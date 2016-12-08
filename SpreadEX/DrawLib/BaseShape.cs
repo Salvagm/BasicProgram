@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace SpreadEX.DrawLib
 {
-    class BaseShape
+    abstract class BaseShape
     {
         Coordinates ShapePosition;
+
+        public abstract void Print();
 
     }
 }

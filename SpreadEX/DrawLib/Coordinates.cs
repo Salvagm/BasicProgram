@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace SpreadEX.DrawLib
 {
+    /// <summary>
+    /// Basic coordinates class
+    /// </summary>
     class Coordinates
     {
         public float X
@@ -18,6 +21,16 @@ namespace SpreadEX.DrawLib
             get; set;
         }
 
-        public Coordinates
+        public Coordinates(float x, float y)
+        {
+            X = x;
+            Y = y;
+        }
+
+        public Coordinates(Coordinates other)
+        {
+            X = other.X;
+            Y = other.Y;
+        }
     }
 }
