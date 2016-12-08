@@ -6,18 +6,42 @@ using System.Threading.Tasks;
 
 namespace SpreadEX.DrawLib
 {
+    /// <summary>
+    /// Basic coordinates class
+    /// </summary>
     class Coordinates
     {
-        public float X
+        public int X
         {
             get; set;
         }
 
-        public float Y
+        public int Y
         {
             get; set;
         }
 
-        public Coordinates
+        public Coordinates(int x, int y)
+        {
+            X = x;
+            Y = y;
+        }
+
+        public Coordinates()
+        {
+            X = 0;
+            Y = 0;
+        }
+
+        public Coordinates(Coordinates other)
+        {
+            X = other.X;
+            Y = other.Y;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("({0},{1})", X, Y);
+        }
     }
 }
